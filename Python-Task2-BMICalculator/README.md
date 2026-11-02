@@ -1,34 +1,42 @@
-# BMI Calculator
+# BMI Tracker
 
-A command-line BMI calculator built with Python.
+A desktop BMI calculator built with Python, tkinter, SQLite and matplotlib.
 
 ## How to run
-python bmi.py
+pip install matplotlib
+python bmi_gui.py
 
-## Formula
-BMI = weight (kg) / height (m)²
-
-## Categories
-- Underweight: below 18.5
-- Normal: 18.5 to 24.9
-- Overweight: 25 to 29.9
-- Obese: 30 and above
+A simple command-line version is also included: python bmi_simple.py
 
 ## Features
-- Input validation for non-numeric and negative values
-- Result rounded to 2 decimal places
+- Labelled input fields for name, weight (kg) and height (m)
+- BMI formula: weight / height squared
+- Colour-coded result card: Underweight, Normal, Overweight, Obese
+- BMI scale bar with a marker showing your position
+- Multiple users, chosen from a dropdown
+- Records saved in an SQLite database, shown in a table
+- BMI trend graph for each user (matplotlib)
+- Input validation and database error handling
+
+## Note
+This tool is for learning purposes and is not medical advice.
 
 ## Screenshots
 
 
-![Normal](normal.png)
+![Normal](gui-normal.png)
 
 
 
 
-![Underweight](underweight.png)
+![Obese](gui-obese.png)
 
 
 
 
-![Invalid input](invalid-input.png)
+![Trend graph](gui-graph.png)
+
+
+
+
+![Error](gui-error.png)
